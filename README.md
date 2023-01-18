@@ -62,7 +62,7 @@ Sorry, I couldn't figure out how to directly include the folders in the project 
 
 
 
-EXPLANATIONS:
+<center> EXPLANATIONS: </center>
 
 HTML:
 
