@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Charango4554" />
+  <link rel="stylesheet" type="text/css" href="../styles/media.css" />
+
+  <title>
+    Canva 
+  </title>
+</head>
+
+<body>
+  <header>
+    <div style="display: flex; justify-content: space-between;">
+      <div><h1>Canva</h1></div>
+      <div><h1><a href="index.html">Accueil</a></h1></div>
+    </div>
+    <nav>
+      <ul>
+        <li></li>
+        <li>
+          <a href="guide.html">
+            Guide
+          </a>
+        </li>
+        <li>
+          <a href="Albums.html">
+            Albums
+          </a>
+
+        </li>
+        <li>
+          <a href="newsletter.html">
+            Newsletter
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>
+        Le logo
+      </h2>
+      <figure>
+        <canvas id="canvas" width="450" height="300">
+        </canvas>
+        <figcaption>
+          <p>
+            
+          </p>
+        </figcaption>
+      </figure>
+      <p>
+        Le canva dans ce 
+        <a href="../javascript/canvas.js">
+          fichier
+        </a>
+      </p>
+        <br>
+        <pre>
+          function draw() {
+            // recupere le contexte de dessin du canvas
+            var ctx = document.getElementById('canvas').getContext('2d');
+            var w = document.getElementById('canvas').width;
+            var h = document.getElementById('canvas').height;
+          
+            // definit la couleur de remplissage du premier cercle
+            ctx.fillStyle = '#642580';
+          
+            // dessine le premier cercle
+            ctx.beginPath();
+            ctx.arc(w / 4, h / 2, h / 4, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.closePath();
+          
+            // definit la couleur de remplissage du deuxieme cercle
+            ctx.fillStyle = '#642580';
+          
+            // dessine le deuxieme cercle
+            ctx.beginPath();
+            ctx.arc(3 * w / 4, h / 2, h / 4, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.closePath();
+          
+            // definit la couleur de remplissage du carre
+            ctx.fillStyle = '#9737BF';
+          
+            // dessine le carre
+            ctx.beginPath();
+            ctx.rect(w / 4, h / 4, w / 2, h / 2);
+            ctx.fill();
+            ctx.closePath();
+          
+            // definit la police et la couleur de texte
+            ctx.font = '48px sans-serif';
+            ctx.fillStyle = '#000000';
+          
+            // dessine le texte
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('(つ≧▽≦)つ', w / 2, h / 2);
+          
+          
+          }
+        </pre>
+
+      <!--La première partie du code déclare une fonction draw qui sera utilisée pour dessiner sur le canvas. 
+        Cette fonction utilise la méthode getContext de l'objet canvas pour récupérer le contexte de dessin du canvas et 
+        les propriétés width et height de l'objet canvas pour déterminer les dimensions du canvas.
+
+
+        Ensuite, le code utilise la propriété fillStyle du contexte de dessin pour définir la couleur de remplissage du 
+        premier cercle en utilisant une couleur hexadécimale. La fonction beginPath est appelée pour démarrer un nouveau 
+        chemin, puis la méthode arc est utilisée pour dessiner un cercle sur le canvas. La méthode arc prend plusieurs 
+        arguments : le premier et le deuxième sont les coordonnées x et y du centre du cercle, le troisième est le rayon 
+        du cercle, et les deux derniers sont l'angle de départ et l'angle final de l'arc à dessiner (en radians). 
+        
+        En utilisant une valeur de 0 pour l'angle de départ et 2 * Math.PI pour l'angle final, nous dessinons un cercle
+         complet. La fonction fill est appelée pour remplir le cercle avec la couleur de remplissage définie précédemment,
+          puis la fonction closePath est appelée pour fermer le chemin.
+
+        Le reste du code utilise des techniques similaires pour dessiner le deuxième cercle, le carré, et le texte sur le 
+        canvas. La couleur de remplissage du deuxième cercle et du carré est définie en utilisant des couleurs hexadécimales
+         différentes, et les formes sont dessinées en utilisant les méthodes arc et rect du contexte de dessin.
+
+
+        Pour dessiner le texte, le code utilise la propriété font du contexte de dessin pour définir la police et la 
+        taille du texte, et la propriété fillStyle pour définir la couleur de remplissage. La fonction fillText est 
+        utilisée pour dessiner le texte sur le canvas, en utilisant les propriétés textAlign et textBaseline pour centrer
+         le texte horizontalement et verticalement sur le canvas.-->
+
+
+      <p>La première partie du code déclare une fonction <strong>draw</strong> qui sera utilisée pour dessiner sur le <strong>canvas</strong>.
+        Cette fonction utilise la méthode <strong>getContext</strong> de l'objet <strong>canvas</strong> pour récupérer le contexte de dessin du <strong>canvas</strong>
+         et les propriétés <strong>width</strong> et <strong>height</strong> de l'objet <strong>canvas</strong> pour déterminer les dimensions du <strong>canvas</strong>.</p>
+      <br>
+      <p>Ensuite, le code utilise la propriété <strong>fillStyle</strong> du contexte de dessin pour définir la couleur de remplissage 
+      du premier cercle en utilisant une couleur hexadécimale. La fonction <strong>beginPath</strong> est appelée pour démarrer un nouveau 
+      chemin, puis la méthode <strong>arc</strong> est utilisée pour dessiner un cercle sur le <strong>canvas</strong>. La méthode <strong>arc</strong> prend plusieurs 
+      arguments : le premier et le deuxième sont les coordonnées x et y du centre du cercle, le troisième est le rayon du 
+      cercle, et les deux derniers sont l'angle de départ et l'angle final de l'<strong>arc</strong> à dessiner (en radians). En utilisant 
+      une valeur de <strong>0</strong> pour l'angle de départ et <strong>2 * Math.PI</strong> pour l'angle final, nous dessinons un cercle complet.
+      La fonction <strong>fill</strong> est appelée pour remplir le cercle avec la couleur de remplissage définie précédemment, 
+      puis la fonction <strong>closePath</strong> est appelée pour fermer le chemin.</p>
+      <br>
+      <p>Le reste du code utilise des techniques similaires pour dessiner le deuxième cercle, le carré, et le texte 
+        sur le <strong>canvas</strong>. La couleur de remplissage du deuxième cercle et du carré est définie en utilisant des 
+        couleurs hexadécimales différentes, et les formes sont dessinées en utilisant les méthodes <strong>arc</strong> et 
+        <strong>rect</strong> du contexte de dessin.</p>
+      <br>
+      <p>Pour dessiner le texte, le code utilise la propriété font du contexte de dessin pour définir la police 
+        et la taille du texte, et la propriété <strong>fillStyle</strong> pour définir la couleur de remplissage. La fonction fillText est utilisée pour dessiner le texte sur le <strong>canvas</strong>, en utilisant les propriétés <strong>textAlign</strong> et <strong>textBaseline</strong> pour centrer le texte horizontalement et verticalement sur le <strong>canvas</strong>.
+        J'espère que cette explication détaillée vous aidera à mieux comprendre ce que fait ce code</p>
+    </section>
+
+
+  </main>
+  <footer>
+    <p>
+      La Doj'Horloge 😻
+    </p>
+    <p>
+      <span id="clock">
+      </span>
+    </p>
+    <div style="display: flex; justify-content: space-between;">
+      <div><h1><a href="Albums.html">👈🏾</a></h1></div>
+      <div><h1><a href="newsletter.html">👉🏾</a></h1></div>
+    </div>
+  </footer>
+  <script src="../javascript/canvas.js" onload="javascript:draw()">
+  </script>
+  <script src="../javascript/clock.js" onload="javascript:startclock()">
+  </script>
+</body>
+
+</html>

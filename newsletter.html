@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Charango4554" />
+  <link rel="stylesheet" type="text/css" href="../styles/newsletter.css" />
+  <title>
+    Newsletter 
+  </title>
+</head>
+
+<body>
+  <header>
+    <div style="display: flex; justify-content: space-between;">
+      <div><h1>Newsletter</h1></div>
+      <div><h1><a href="index.html">Accueil</a></h1></div>
+    </div>
+
+    <nav>
+      <ul>
+        <li></li>
+        <li>
+          <a href="guide.html">
+            Guide
+          </a>
+        </li>
+        <li>
+          <a href="Albums.html">
+            Albums
+          </a>
+        </li>
+        <li>
+          <a href="canva.html">
+            Canva
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <aside>
+  </aside>
+  <main>
+    <section>
+      <h2>
+        Remplissez ce formulaire pour vous inscrire à notre Newsletter.
+      </h2>
+      <form id="formulaire" action="mailto:ratyann@outlook.fr" onsubmit="javascript:return checkform();" method="post" enctype="multipart/form-data">
+        <p id="fout">
+        </p>
+        <div>
+          <fieldset>
+            <legend>
+              Nom :
+            </legend>
+            <input type="text" name="nom" id="nom" required pattern="^[A-Za-z]+$" />
+          </fieldset>
+          <fieldset>
+            <legend>
+              Prénom :
+            </legend>
+            <input type="text" name="prenom" id="prenom" required pattern="^[A-Za-z]+$" />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>
+              Votre numéro:
+            </legend>
+            <input type="tel" name="tel" id="tel" required pattern="^[0-9]{10}$" />
+          </fieldset>
+          <fieldset>
+            <legend>
+              Votre photo de profil (format JPEG) :
+            </legend>
+            <input type="file" name="photo" id="photo" accept=".jpeg,.jpg" required />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>
+              Votre date de naissance :
+            </legend>
+            <input type="date" name="datenaissance" id="datenaissance" required max="2020-12-31" />
+          </fieldset>
+          <fieldset>
+            <legend>
+              Votre âge :
+            </legend>
+            <input type="number" name="age" id="age" min="0" required />
+          </fieldset>
+        </div>
+        <fieldset>
+          <legend>
+            Votre addresse e-mail :
+          </legend>
+          <input type="email" name="email" id="email" required pattern="^[a-zA-Z0-9_\.-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" />
+        </fieldset>
+        <fieldset>
+          <legend>
+            Choissisez un mot de passe :
+          </legend>
+          <input type="password" name="mpd" id="mpd" required pattern="^.{8,}$" />
+        </fieldset>
+        <div>
+          <fieldset>
+            <legend>
+              Indiquez à quel point vous êtes fan de Doja sur une échelle de 1 à 10 :
+            </legend>
+            <p>
+              <input type="range" min="1" max="10" value="5" name="range" id="range" oninput="javascript:refreshrange()" />
+              <label for="range">
+                <span id="rangeout">
+                  5
+                </span>
+              </label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Votre Projet préférer de Doja :
+            </legend>
+            <select name="bestinAlbums" id="bestinAlbums" required>
+              <option value="">
+                Choisissez
+              </option>
+              <optgroup label="Albums">
+                <option value="a">
+                  Amala
+                </option>
+                <option value="b">
+                  Hot Pink
+                </option>
+                <option value="c">
+                  Planet Her
+                </option>
+              </optgroup>
+              <optgroup label="Indé">
+                <option value="d">
+                  MOOO!
+                </option>
+                <option value="e">
+                  4 morant
+                </option>
+                <option value="f">
+                  Boss
+                </option>
+              </optgroup>
+              <optgroup label="Personalité">
+                <option value="g">
+                  Son twitter
+                </option>
+                <option value="h">
+                  Son insta
+                </option>
+              </optgroup>
+            </select>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>
+              Votre couleur favorite :
+            </legend>
+            <input type="color" name="couleur" id="couleur" />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>
+              Doja ou Cat ?
+            </legend>
+            <p>
+              <input type="radio" name="animal" id="chatanimal" required />
+              <label for="chatanimal">
+                Cat😼
+              </label>
+            </p>
+            <p>
+              <input type="radio" name="animal" id="chienanimal" required />
+              <label for="chienanimal">
+                Doja😌
+              </label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Conditions d'utilisation :
+            </legend>
+            <p>
+              <input type="checkbox" name="cgu" id="cgu" required />
+              <label for="cgu">
+                CGU
+              </label>
+            </p>
+            <input type="hidden" name="hidden" id="hidden" value="Cette valeur est cachée." />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>
+              Selectionnez l'heure à laquelle vous souhaitez recevoir notre Doja'News :
+            </legend>
+            <input type="time" name="heure" id="heure" required min="00:00" max="23:59" />
+          </fieldset>
+        </div>
+        <fieldset>
+          <legend>
+            Votre commentaire sur notre site :
+          </legend>
+          <textarea name="commentaire" id="commentaire" placeholder="Votre commentaire..." rows="3">
+          </textarea>
+        </fieldset>
+        <div>
+          <fieldset>
+            <input type="reset" name="reset" value="Remise à zéro" />
+          </fieldset>
+          <fieldset>
+            <input type="submit" name="submit" value="Envoyer" />
+          </fieldset>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>
+      La Doj'Horloge 😻
+    </p>
+    <p>
+      <span id="clock">
+      </span>
+    </p>
+    <div style="display: flex; justify-content: space-between;">
+      <div><h1><a href="canva.html">👈🏾</a></h1></div>
+      <div><h1><a href="index.html">👉🏾</a></h1></div>
+    </div>
+  </footer>
+  <script src="../javascript/form.js">
+  </script>
+  <script src="../javascript/clock.js" onload="javascript:startclock()">
+  </script>
+</body>
+
+</html>

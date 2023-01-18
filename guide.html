@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Charango4554" />
+  <link rel="stylesheet" type="text/css" href="../styles/guide.css" />
+
+  <title>
+    Guide - DCF
+  </title>
+</head>
+
+<body>
+  <header>
+      <div style="display: flex; justify-content: space-between;">
+        <div><h1>Guide</h1></div>
+        <div><h1><a href="index.html">Accueil</a></h1></div>
+      </div>
+    <nav>
+      <ul>
+        <li></li>
+        <li>
+          <a href="Albums.html">
+            Albums
+          </a>
+        </li>
+        <li>
+          <a href="canva.html">
+            Canva
+          </a>
+        </li>
+        <li>
+          <a href="newsletter.html">
+            Newsletter
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <aside>
+
+  </aside>
+  <main>
+    <section>
+      <h2>
+        Voici la liste des événements marquant de la carriére de Doja.
+      </h2>
+
+      <p>
+        <input type="button" onclick="javascript:openmodal('Grammy')" value="Lauréat Grammy Awards" />
+      </p>
+
+      <p>
+        <input type="button" onclick="javascript:openmodal('Covid')" value="Polémique Covid-19" />
+      </p>
+
+     <p>
+        <input type="button" onclick="javascript:openmodal('musique')" value="Musique" />
+     </p>
+
+    </section>
+  </main>
+  <div id="modal">
+    
+    <article id="Grammy">
+      <header>
+        <h2>
+          Lauréat Grammy Awards
+        </h2>
+        <input type="button" value="&times;" onclick="javascript:closemodal()" />
+      </header>
+        <!-- En mars 2021, Doja Cat participe à la cérémonie des Grammy Awards où elle y est nominée dans 
+          3 catégories : Best New Artist, Record of the Year pour Say So et Best Pop Solo Performance pour Say So.
+          Doja remporte le prix de la meilleure performance pop en duo pour "KISS ME MORE".-->
+        <p>
+          En mars 2021, Doja Cat participe à la cérémonie des Grammy Awards où elle y est nominée dans
+        </p>
+        <p>
+          3 catégories : Best New Artist, Record of the Year pour Say So et Best Pop Solo Performance pour Say So.
+        </p>
+        <p>
+          Doja remporte le prix de la meilleure performance pop en duo pour "KISS ME MORE"
+        </p>
+    </article>
+
+    <article id="Covid">
+      <header>
+        <h2>
+          Polémique Covid-19
+        </h2>
+        <input type="button" value="&times;" onclick="javascript:closemodal()" />
+      </header>
+      <div>
+        <!-- En mars 2020, pendant la pandémie de Covid-19, elle crée une polémique en déclarant que le 
+          
+          Covid-19 n’était qu’une grippe et qu’elle n’en avait pas peur. Je pense qu'elle a été 
+          injustement été attaquer car même si cela peut être risquer pour une personalité publique de dire de tel chose, 
+          cela à été dit au début de la pandemie lorsque la moitié de la population été diviser entre si c'était un véritable
+          virus ou juste une grippe.-->
+
+        <p>
+          En mars 2020, pendant la pandémie de Covid-19, elle crée une polémique en déclarant que le Covid-19
+        </p>
+        <p>
+        n’était qu’une grippe et qu’elle n’en avait pas peur. Je pense qu'elle a été injustement été attaquer
+        </p>
+        <p>
+        car même si cela peut être risquer pour une personalité publique de dire de tel chose, cela à été dit
+        </p>
+        <p>
+        au début de la pandemie lorsque la moitié de la population été diviser entre si c'était un véritable
+        virus ou juste une grippe.
+        </p>
+      </div>
+    </article>
+
+    <article id="musique">
+      <header>
+        <h2>
+          4Morant-Doja Cat
+        </h2>
+        <input type="button" value="&times;" onclick="javascript:closemodal()" />
+      </header>
+      <div>
+        <!-- "4morant" de Doja Cat est l'une de mes chansons préférées. C'est assez triste, mais j'aime le rythme.
+          La chanson parle d'une relation qui n'a pas fonctionné, et c'est quelque chose auquel nous pouvons tous nous identifier.
+          Parfois, nous devons abandonner les personnes qui ne nous rendent pas heureux, même si cela fait mal.
+          Mais au final, c'est mieux pour nous.-->
+        <p>
+          "4morant" de Doja Cat est l'une de mes chansons préférées. C'est assez triste, mais j'aime le rythme.
+        </p>
+        <p>
+        La chanson parle d'une relation qui n'a pas fonctionné, et c'est quelque chose auquel nous pouvons tous nous identifier.
+        </p>
+        <p>
+        Parfois, nous devons abandonner les personnes qui ne nous rendent pas heureux, même si cela fait mal.
+        </p>
+        <p>
+        Mais au final, c'est mieux pour nous.
+        </p>
+
+        <div id="4morant">
+        <audio src="../media/4morant.mp3" controls>
+        </audio>
+      </div>
+      </div>
+
+
+    </article>
+
+  </div>
+  <footer>
+    <p>
+      La Doj'Horloge 😻
+    </p>
+    <p>
+      <span id="clock">
+      </span>
+    </p>
+    <div style="display: flex; justify-content: space-between;">
+      <div><h1><a href="index.html">👈🏾</a></h1></div>
+      <div><h1><a href="Albums.html">👉🏾</a></h1></div>
+    </div>
+  </footer>
+  <script src="../javascript/articles.js">
+  </script>
+  <script src="../javascript/clock.js" onload="javascript:startclock()">
+  </script>
+</body>
+
+</html>
