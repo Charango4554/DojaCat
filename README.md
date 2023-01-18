@@ -42,7 +42,7 @@ JAVASCRIPT:
 - Le fichier "form" contient les fonctions javascript qui permettent de valider et d'envoyer les données du formulaire de contact.
 
 
-
+________________________________________________________________________________________________
 
 
 #ENGLISH
