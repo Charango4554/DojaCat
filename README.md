@@ -1,4 +1,4 @@
-# DojaCat.github.io
+# [---> Dojacat.com <---](https://charango4554.github.io/DojaCat/html/index.html)
 
 (documentation in English below)
 
